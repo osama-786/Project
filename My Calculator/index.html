@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Calculator</h1>
+        <div class="child">
+            <div class="int">
+                <input type="text" id="input" class="input" placeholder="00">
+            </div>
+            <hr style="height: 3px; background-color: black; border-radius: 3px;">
+            <div class="row">
+                <button id="btn" class="btn" value="π" onclick="pi()">π</button>
+                <button id="btn" class="btn" value="(" onclick="show('(')">(</button>
+                <button id="btn" class="btn" value=")" onclick="show(')')">)</button>
+                <button id="btn" class="btn" value="/" onclick="show('/')">/</button>
+                <button id="btn" class="btn" value="CE" onclick="clearScreen()">CE</button>
+            </div>
+            <div class="row">
+                <button id="btn" class="btn" value="ln" onclick="ln()">ln</button>
+                <button id="btn" class="btn" value="7" onclick="show('7')">7</button>
+                <button id="btn" class="btn" value="8" onclick="show('8')">8</button>
+                <button id="btn" class="btn" value="9" onclick="show('9')">9</button>
+                <button id="btn" class="btn" value="%" onclick="show('%')">%</button>
+            </div>
+            <div class="row">
+                <button id="btn" class="btn" value="log" onclick="log()">log</button>
+                <button id="btn" class="btn" value="4" onclick="show('4')">4</button>
+                <button id="btn" class="btn" value="5" onclick="show('5')">5</button>
+                <button id="btn" class="btn" value="6" onclick="show('6')">6</button>
+                <button id="btn" class="btn" value="*" onclick="show('*')">X</button>
+            </div>
+            <div class="row">
+                <button id="btn" class="btn" value="√" onclick="squareRoot()">(√)</button>
+                <button id="btn" class="btn" value="1" onclick="show('1')">1</button>
+                <button id="btn" class="btn" value="2" onclick="show('2')">2</button>
+                <button id="btn" class="btn" value="3" onclick="show('3')">3</button>
+                <button id="btn" class="btn" value="-" onclick="show('-')">-</button>
+            </div>
+            <div class="row">
+                <button id="btn" class="btn" value="Xpowy" onclick="pow()">Xpowy</button>
+                <button id="btn" class="btn" value="0" onclick="show('0')">0</button>
+                <button id="btn" class="btn" value="." onclick="show('.')">.</button>
+                <button id="btn" class="btn" value="=" onclick="calculate()">=</button>
+                <button id="btn" class="btn" value="+" onclick="show('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="btn1"><a href="https://ornate-tulumba-9d00c4.netlify.app/">Age</a></button>
+                <button class="btn2"><a href="https://glittering-crostata-b94fd4.netlify.app/">Discount</a></button>
+                <button class="btn3"><a href="https://lustrous-basbousa-2d603b.netlify.app/">Temperature</a></button>
+                <button class="btn4"><a href="https://aquamarine-cannoli-3f313e.netlify.app/">Speed</a></button>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; Osama Bin Tarique And Rajshri Wankhade</footer>
+</body>
+<script src="index.js"></script>
+</html>

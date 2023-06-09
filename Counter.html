@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 12%;
+            background: linear-gradient(to bottom, #d63f39 0%, #383bc0 116%);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .parent
+        {
+            border: 3px solid black;
+            height: 400px;
+            width: 450px;
+            text-align: center;
+            background-color: #F1F5F8;
+            border-radius: 15px;
+            box-shadow: 5px 5px  rgb(0, 0, 0);
+
+        }
+        h1
+        {
+            font-size: 50px;
+            color: darkblue;
+        }
+        .result
+        {
+            display: block;
+            height: 200px;
+            width: 300px;
+            text-align: center;
+            margin-left: 17%;
+            background-color:inherit;
+            font-size: 120px;
+            margin-top: 12%;
+        }
+        .btn1
+        {
+            border-color: green;
+            background-color: inherit;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .btn2
+        {
+            border-color: black;
+            background-color: inherit;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .btn3
+        {
+            border-color: red;
+            background-color: inherit;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .btn1:hover
+        {
+            border-color: black;
+            background-color: green;
+            color: white;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+        .btn2:hover
+        {
+            border-color: white;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+        .btn3:hover
+        {
+            border-color:black;
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>Counter</h1>
+        <div class="result" id="result">0</div>
+        <div class="button">
+            <button class="btn1" onclick="counter()">Increase</button>&nbsp;&nbsp;
+            <button class="btn2" onclick="counter2()">Reset</button>&nbsp;&nbsp;
+            <button class="btn3" onclick="counter1()">Decrease</button>
+        </div>
+    </div>
+</body>
+<script>
+    var count=0;
+    function counter(){
+        count=count+1;
+        document.getElementById("result").style.color="green"
+        document.getElementById("result").innerHTML=count;
+    }
+    function counter1(){
+        count=count-1;
+        document.getElementById("result").style.color="red"
+        document.getElementById("result").innerHTML=count;
+    }
+    function counter2(){
+        count=0;
+        document.getElementById("result").style.color="black"
+        document.getElementById("result").innerHTML=count;
+    }
+</script>
+</html>

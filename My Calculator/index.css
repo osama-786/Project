@@ -1,0 +1,142 @@
+body
+    {
+        background: linear-gradient(to bottom, #417ac4 0%, #66ffff 116%);
+        height: 100vh;
+        overflow: hidden;
+    }
+    .container
+    {
+        margin-left: 37%;
+        margin-top: 10%;
+        height: 380px;
+        width: 400px;
+        border: 3px solid white;
+        text-align: center;
+        background-color: #336699;
+        border-radius: 10px;
+        box-shadow: 5px 5px  #939292;
+
+    }
+    .child
+    {
+            border: 3px solid black;
+            height: 270px;
+            width: 360px;
+            margin-left: 17px;
+            padding-left: 3px;
+            padding-top: 10px;
+            background-color: lightblue;
+            border-radius: 10px;
+            box-shadow: 3px 3px  rgb(39, 38, 38);
+        }
+        h1
+        {
+            font-family: 'orbitron';
+            text-shadow: 4px 4px black;
+            color: beige;
+        }
+        .input
+        {
+            height: 40px;
+            width: 350px;
+            border: 1px solid black;
+            text-align: end;
+            border-radius: 10px;
+            background-color: white;
+            font-size: x-large;
+            font-family: 'orbitron';
+        }
+        .row
+        {
+            display: grid;
+            grid-template-columns: 70px 70px 70px 70px 70px;
+            gap: 2px;
+            justify-content: center;
+            padding: 1.5px;
+        }
+        .btn
+        {
+            width: 65px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #475152;
+            color:white;
+            box-shadow: 3px 0px  #bababa;
+            font-family: 'orbitron';
+        }
+        .btn:hover
+        {
+            background-color: blue;
+        }
+        .btn1
+        {
+            width: 65px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #475152;
+            color:white;
+            box-shadow: 3px 3px  #bababa;
+            font-family: 'orbitron';
+        }
+        .btn2
+        {
+            width: 85px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #475152;
+            color:white;
+            box-shadow: 3px 3px  #bababa;
+            font-family: 'orbitron';
+        }
+        .btn3
+        {
+            width: 120px;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 19px;
+            background-color: #475152;
+            color:white;
+            box-shadow: 3px 3px  #bababa;
+            font-family: 'orbitron';
+        }
+        .btn4
+        {
+            width: 65px;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 73px;
+            background-color: #475152;
+            color:white;
+            box-shadow: 3px 3px  #bababa;
+            font-family: 'orbitron';
+        }
+        .btn1:hover
+        {
+            background-color: blue;
+        }
+        .btn2:hover
+        {
+            background-color: blue;
+        }
+        .btn3:hover
+        {
+            background-color: blue;
+        }
+        .btn4:hover
+        {
+            background-color: blue;
+        }
+        a
+        {
+            color: white;
+            text-decoration: none;
+        }
+        footer{
+           position: fixed;
+           bottom: 0;
+           width: 100%;
+           font-size: 15px;
+           height: 20px;    
+           text-align: center;
+           color:black;
+        }

@@ -1,0 +1,60 @@
+body{
+            background-color: black;
+        }
+        .parent
+        {
+            height: 520px;
+            width: 1300px;
+            background-color: gainsboro;
+            margin-left: 75px;
+            margin-top: 110px;
+            border-radius: 20px;
+            box-shadow: 5px 5px  red;
+        }
+        .first
+        {
+            display: flex;
+            justify-content: center;
+            color: red;
+            font-size: 80px;
+            padding-top: 50px;
+            font-family: 'orbitron';
+            text-shadow: 4px 4px black;
+        }
+        .clock{
+            font-size: 135px;
+            font-family: 'Orbitron';
+            text-shadow: 4px 4px black;
+            color: blue;
+            background-color:white;
+            box-shadow: 8px 8px  #bababa;
+            text-align: center;
+            width: 1000px;
+            margin-left: 150px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        #date
+        {
+            font-size: 38px;
+            height: 50px;
+            width: 390px;
+            margin-left: 470px;
+            margin-top: 30px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 5px 5px  #bababa;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            font-family: 'Orbitron';
+            text-shadow: 4px 4px wheat;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 15px;
+        height: 20px;    
+        text-align: center;
+        color:white;
+     }
