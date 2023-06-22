@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+  {
+   background: linear-gradient(180deg, #a1cff0 10%, #024276 156%);
+   height: 100vh;
+   overflow: hidden;
+  }
+.AppContainer
+{
+  width: 800px;
+  border: 2px solid black;
+  height: 550px;
+  margin-left: 380px;
+  margin-top: 90px;
+  border-radius: 5px;
+}
+.inputs
+{
+  margin-left: 300px;
+  margin-top: 10px;
+}
+input[type="text"],
+    textarea 
+    {
+        min-height: 32px;
+        border-radius: 5px;
+    }
+.btn
+{
+  margin-left: 10px;
+  width: 70px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 8px;
+  color: white;
+}
+.btn:hover
+{
+  background-color: darkblue;
+  cursor: pointer;
+}
+.card-body
+{
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.weather-date-location h3
+{
+  font-size: x-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.weather-date
+{
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cityCountry
+{
+  margin-top: 10px;
+  font-size: xx-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.icon
+{
+  margin-top: 25px;
+}
+.switch:hover
+{
+  color: black;
+  cursor: pointer;
+}
+.switch
+{
+  font-size: 60px;
+  margin-left: 30px;
+  color: white;
+}
+.weatherdescription
+{
+  font-size: x-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.MainTemp
+{
+  display: flex;
+  font-size: 45px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 40px
+}
+.temp2
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 10px;
+}
+.minTemp
+{
+  display: flex;
+}
+.maxTemp
+{
+  display: flex;
+  margin-top: 10px;
+}
+.details
+{
+  margin-top: -300px;
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 85px;
+  position: fixed;
+}
+.values
+{
+  font-size: 25px;
+  font-weight: 500;
+}
+.icons
+{
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+}
+.icons:hover
+{
+  color: black;
+  cursor: pointer;
+}
+.val
+{
+  display: flex;
+}
+.des
+{
+  margin-top: 15px;
+  font-size: x-large;
+}
