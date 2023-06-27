@@ -1,0 +1,369 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+:root{
+    --search :#dce6f1;
+    --header_text: rgba(0,0,0,.9);
+    --font_header_icon_size: 1.6rem;   
+    --para_font_size: 0.8rem;
+    --para_color:rgba(0,0,0,.6);
+    --para_font_weight: 400;
+    --header_font_weight: 600;
+    --body_background: #e9e5df;
+    } 
+body{
+    background-color: var(--body_background);
+    }
+.header
+{
+    padding:5px 150px;
+    position:sticky;
+    top:0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: white;
+    z-index:1;
+}
+.leftheader
+{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+.leftheader img
+{
+    object-fit: contain;
+    height: 40px;
+}
+.rightheader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+}
+.navlink
+{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#6e6558;
+    padding:0px 18px;
+}
+.searchbar
+{
+    background-color: var(--search);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    margin-left:10px;
+    color:#6e6558;
+}
+.searchbar > input[type=text]{
+    border: none;
+    outline: none;
+    background: transparent;
+    height:40px;
+    margin-left:10px;
+    width:300px;
+}
+.rightheader2
+{
+    border-left: 1px solid black;
+    padding-left: 50px;
+}
+.mainbody{
+    margin:25px 140px;
+    display: grid;
+    grid-template-columns: 18% 50% 25%;
+    grid-gap:12px;
+}
+.sidebar {
+  width: 225px;
+  text-align: center;
+  position: sticky;
+  border-radius: 10px;
+  margin-top: 05px;
+}
+#my_img {
+  border-radius: 50%;
+  width: 70px;
+}
+.background-img {
+  width: 225px;
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: -40px;
+}
+.upprsidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  padding-bottom: 20px;
+}
+.uppersidebar .name {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.sidebar_stat {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid lightgrey;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+}
+.sidebar_recentitem1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar_recentitem1 span {
+ font-size: small;
+}
+.para
+{
+    font-size: small;
+}
+.sidebar_recentitem1 p {
+    color: blue;
+    margin-right: 10px;
+}
+.sidebar_recentitem {
+  padding: 10px;
+  display: flex;
+}
+.sidebarbottom{
+  padding: 10px;
+  border: 1px solid lightgrey;
+  text-align: left;
+  border-radius: 10px;
+  background-color: white;
+}
+.middlepost {
+  background-color: white;
+  display: flex;
+  padding: 10px 15px;
+  flex-direction: column;
+  margin-top: 05px;
+  margin-left: 10px;
+  height: 110px;
+  width: 600px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.postinput
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+.postinput input {
+  border: 0.5px solid grey;
+  cursor: pointer;
+  width: 90%;
+  margin-left: 8px;
+  padding: 15px;
+  border-radius: 80px;
+}
+.postinput img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.icon {
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+}
+
+.icon span {
+  color: grey;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.postlogo {
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.flipkartad {
+  border: 1px solid grey;
+  margin-top: 10px;
+  padding: 0px 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.flipkarticon
+{
+    margin-top: 10px;
+}
+.flipkarticon img {
+    width: 50px;
+    height: 50px;
+}
+.flipkartimg img
+{
+    width: 530px;
+  border-radius: 10px;
+}
+.flipkartpost
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
+    margin-left: 55px;
+}
+.flipkartpost span
+{
+  color: grey;
+  font-size: 12px;
+}
+.flipkartpost p
+{
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: -05px;
+}
+.flipkartinput {
+    margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid grey;
+}
+
+.like {
+  
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.amazonad {
+  border: 1px solid grey;
+  margin-top: 10px;
+  padding: 0px 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.amazonicon
+{
+    margin-top: 10px;
+}
+.amazonicon img {
+    width: 50px;
+    height: 50px;
+}
+.amazonimg img
+{
+    width: 530px;
+  border-radius: 10px;
+}
+.amazonpost
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
+    margin-left: 55px;
+}
+.amazonpost span
+{
+  color: grey;
+  font-size: 12px;
+}
+.amazonpost p
+{
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: -05px;
+}
+.amazoninput {
+    margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid grey;
+}
+
+.like {
+  
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.newshead
+{
+    display: flex;
+    justify-content: space-between;
+}
+.linkedinnews h4 {
+  padding: 10px;
+}
+.info
+{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.news
+{
+  background-color: white;
+  margin-top: 05px;
+  border: 1px solid gray;
+  width: 300px;
+  height: 350px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.news1
+{
+  background-color: white;
+  margin-top: 20px;
+  border: 1px solid gray;
+  width: 300px;
+  height: 350px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.newslist p
+{
+    font-size: small;
+}
+.navlink:hover
+{
+    color: black;
+}
+.sidebar_recentitem:hover
+{
+    background-color:lightgrey
+}
+.sidebar_recentitem1:hover
+{
+    background-color:lightgrey
+}
+.postlogo:hover
+{
+    background-color:lightgrey
+}
+.like:hover
+{
+    background-color:lightgrey
+}
+.newslist li:hover
+{
+    background-color:lightgrey
+}
